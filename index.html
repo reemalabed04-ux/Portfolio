@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reem Alaabed | Experience Identity Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav>
+        <div class="logo">Reem.</div>
+        <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <button id="contact-btn">Contact</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <h1 class="reveal">Designing stories <br> <span class="italic">you can feel.</span></h1>
+            <p class="tagline">Reem Alaabed | Experience Identity Designer</p>
+        </div>
+        <div class="hero-image-container">
+            <img src="Reemprofile.jpg" alt="Reem" class="profile-img">
+        </div>
+    </header>
+
+    <section id="work" class="work-section">
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="film">Filmmaking</button>
+            <button class="filter-btn" data-filter="3d">3D & Animation</button>
+            <button class="filter-btn" data-filter="multimedia">Multimedia</button>
+        </div>
+        <div class="grid" id="project-grid">
+            </div>
+    </section>
+
+    <div class="contact-panel" id="contact-panel">
+        <button class="close-btn">&times;</button>
+        <h2>Let's Create Together</h2>
+        <p>Located in Jordan, working worldwide.</p>
+        
+        <div class="contact-links">
+            <a href="https://wa.me/962799404682" target="_blank" class="c-link">WhatsApp ↗</a>
+            <a href="https://instagram.com/Reemalaabed_" target="_blank" class="c-link">Instagram ↗</a>
+            <a href="mailto:Reem.alabed04@gmail.com" class="c-link">Email ↗</a>
+            <a href="https://www.behance.net/reemal-aabd" target="_blank" class="c-link">Behance ↗</a>
+        </div>
+        
+        <form class="direct-msg">
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="Your Message" rows="4"></textarea>
+            <button type="submit" class="send-btn">Send Message</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
