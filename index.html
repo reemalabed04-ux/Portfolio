@@ -1,136 +1,616 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reem Alaabed</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reem Alaabed | Experience Identity Designer</title>
+    <meta name="description" content="Designing stories you can feel. Portfolio of Reem Alaabed - Multidisciplinary Designer & Storyteller">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-<canvas id="stars"></canvas>
-
-<header>
-    <img src="logo1.png" class="logo">
-    <h1>Reem Alaabed</h1>
-    <h3>Experience Identity Designer</h3>
-    <p class="tagline">Designing stories you can feel.</p>
-</header>
-
-<section class="about">
-    <p>
-        I’m a designer who believes that every visual has a story behind it.
-        I specialize in immersive concepts that combine design with emotion and narrative.
-        Through my work, I aim to create experiences that feel personal, thoughtful, and memorable.
-    </p>
-</section>
-
-<section class="what-i-do">
-    <h2>What I Do</h2>
-    <p>I’m a multidisciplinary designer and storyteller working across design, film, and digital experiences.</p>
-</section>
-
-<!-- ✦ FILMMAKING -->
-<section>
-    <h2>Filmmaking</h2>
-    <div class="grid">
-
-        <a href="https://www.behance.net/reemal-aabd" target="_blank">
-            <img src="between-the-streets-cover.jpg">
-            <h4>Between the Streets</h4>
-        </a>
-
-        <a href="https://www.behance.net/reemal-aabd" target="_blank">
-            <img src="hikaya-cover.jpg">
-            <h4>Hikaya</h4>
-        </a>
-
-        <a href="https://www.behance.net/reemal-aabd" target="_blank">
-            <img src="weibdeh-walk-cover.jpg">
-            <h4>A Walk in Weibdeh</h4>
-        </a>
-
-        <a href="https://www.behance.net/reemal-aabd" target="_blank">
-            <img src="observation-art-cover.jpg">
-            <h4>The Art of Observation</h4>
-        </a>
-
-        <a href="https://www.behance.net/reemal-aabd" target="_blank">
-            <img src="teen-wa-fan-cover.jpg">
-            <h4>طين وفن</h4>
-        </a>
-
-        <a href="https://www.behance.net/reemal-aabd" target="_blank">
-            <img src="la-fuente-cover.jpg">
-            <h4>La Fuente</h4>
-        </a>
-
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-content">
+            <img src="assets/logo1.png" alt="Logo" class="loader-logo">
+            <div class="loader-text">Designing stories...</div>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
     </div>
-</section>
 
-<!-- ✦ 3D -->
-<section>
-    <h2>Modeling & Animation</h2>
-    <div class="grid">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/logo1.png" alt="Reem Alaabed">
+            </a>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-text="Home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+                <li><a href="#work" class="nav-link" data-text="Work">Work</a></li>
+                <li><a href="#categories" class="nav-link" data-text="Categories">Categories</a></li>
+                <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <a href="#" target="_blank">
-            <img src="3d-animation-main.jpg">
-            <h4>3D Animation</h4>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge fade-in-up">Jordan 🇯🇴</div>
+            <h1 class="hero-title fade-in-up delay-1">
+                <span class="name">Reem Alaabed</span>
+                <span class="title">Experience Identity Designer</span>
+            </h1>
+            <p class="hero-tagline fade-in-up delay-2">Designing stories you can feel.</p>
+            <div class="hero-cta fade-in-up delay-3">
+                <a href="#work" class="btn btn-primary">Explore My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+            
+            <!-- Social Links Floating -->
+            <div class="hero-social fade-in-up delay-4">
+                <a href="https://www.instagram.com/reemalaabed_?igsh=MTNxcHZ3ZDV4aHptbg%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.behance.net/reemal-aabd" target="_blank" aria-label="Behance" class="social-link">
+                    <i class="fab fa-behance"></i>
+                </a>
+                <a href="mailto:Reem.alabed04@gmail.com" aria-label="Email" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
         </a>
+    </section>
 
-        <a href="#" target="_blank">
-            <img src="andalus-3d-render.jpg">
-            <h4>Andalus</h4>
-        </a>
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">About Me</span>
+                <h2 class="section-title">The Story Behind the Visuals</h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="about-intro">
+                        I'm a designer who believes that every visual has a story behind it.
+                        I specialize in immersive concepts that combine design with emotion and narrative.
+                        Through my work, I aim to create experiences that feel personal, thoughtful, and memorable.
+                    </p>
+                    
+                    <div class="what-i-do">
+                        <h3>What I Do</h3>
+                        <p>I'm a multidisciplinary designer and storyteller working across design, film, and digital experiences.
+                        I design and create across multiple mediums, combining visuals, storytelling, and experience design.</p>
+                        
+                        <ul class="services-list">
+                            <li><i class="fas fa-palette"></i> <strong>Design & Branding:</strong> Visual identities that communicate clearly and feel meaningful.</li>
+                            <li><i class="fas fa-laptop-code"></i> <strong>UI/UX & Digital Experiences:</strong> Intuitive, engaging, emotionally aware interfaces.</li>
+                            <li><i class="fas fa-book-open"></i> <strong>Visual Storytelling:</strong> Concepts focused on narrative, mood, and human connection.</li>
+                            <li><i class="fas fa-film"></i> <strong>Animation & Multimedia:</strong> Bringing ideas to life through motion and sound.</li>
+                            <li><i class="fas fa-video"></i> <strong>Filmmaking & Documentaries:</strong> Highlighting real stories with authenticity.</li>
+                            <li><i class="fas fa-cube"></i> <strong>3D & Worldbuilding:</strong> Stylized environments blending storytelling with visual exploration.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="about-visual reveal delay-1">
+                    <div class="tools-card">
+                        <h4>Tools I Use</h4>
+                        <div class="tools-grid">
+                            <span class="tool">Photoshop</span>
+                            <span class="tool">Illustrator</span>
+                            <span class="tool">Adobe Animate</span>
+                            <span class="tool">After Effects</span>
+                            <span class="tool">Maya</span>
+                            <span class="tool">Substance</span>
+                            <span class="tool">DaVinci</span>
+                            <span class="tool">Audition</span>
+                            <span class="tool">Unreal Engine</span>
+                            <span class="tool">ZBrush</span>
+                            <span class="tool canon">📷 Canon Cameras</span>
+                        </div>
+                    </div>
+                    
+                    <!-- CV Placeholder -->
+                    <div class="cv-placeholder">
+                        <i class="fas fa-file-alt"></i>
+                        <p>CV Section Coming Soon</p>
+                        <small>When you're ready, name your file <code>Reem-Alaabed-CV.pdf</code> and I'll help you integrate it!</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <a href="#" target="_blank">
-            <img src="fantasia-3d-render.jpg">
-            <h4>Fantasia</h4>
-        </a>
+    <!-- Categories Navigation -->
+    <section id="categories" class="categories section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Explore</span>
+                <h2 class="section-title">My Work Categories</h2>
+            </div>
+            
+            <div class="categories-grid">
+                <button class="category-btn active" data-category="all">
+                    <i class="fas fa-th-large"></i> All Work
+                </button>
+                <button class="category-btn" data-category="filmmaking">
+                    <i class="fas fa-video"></i> Film Making
+                </button>
+                <button class="category-btn" data-category="modeling">
+                    <i class="fas fa-cube"></i> Modeling & Animation
+                </button>
+                <button class="category-btn" data-category="multimedia">
+                    <i class="fas fa-layer-group"></i> Multimedia
+                </button>
+            </div>
+        </div>
+    </section>
 
+    <!-- Portfolio Section -->
+    <section id="work" class="portfolio section">
+        <div class="container">
+            <div class="portfolio-grid">
+                
+                <!-- ============ FILM MAKING ============ -->
+                
+                <!-- بين الشوارع -->
+                <article class="project-card reveal" data-category="filmmaking">
+                    <div class="project-image">
+                        <img src="assets/covers/between-the-streets-cover.jpg" alt="Between the Streets" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Film Making</span>
+                                <h3>Between the Streets</h3>
+                                <p>بين الشوارع</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link" aria-label="View Between the Streets on Behance"></a>
+                </article>
+
+                <!-- لفة لويبدة -->
+                <article class="project-card reveal" data-category="filmmaking">
+                    <div class="project-image">
+                        <img src="assets/covers/weibdeh-walk-cover.jpg" alt="A Walk in Weibdeh" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Film Making</span>
+                                <h3>A Walk in Weibdeh</h3>
+                                <p>لفة لويبدة</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- فن الملاحظة -->
+                <article class="project-card reveal" data-category="filmmaking">
+                    <div class="project-image">
+                        <img src="assets/covers/observation-art-cover.jpg" alt="The Art of Observation" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Film Making</span>
+                                <h3>The Art of Observation</h3>
+                                <p>فن الملاحظة</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- La Fuente -->
+                <article class="project-card reveal" data-category="filmmaking">
+                    <div class="project-image">
+                        <img src="assets/covers/la-fuente-cover.jpg" alt="La Fuente" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Film Making</span>
+                                <h3>La Fuente</h3>
+                                <p>A cinematic exploration of mood, light, and composition</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- طين وفن -->
+                <article class="project-card reveal" data-category="filmmaking">
+                    <div class="project-image">
+                        <img src="assets/covers/teen-wa-fan-cover.jpg" alt="Teen wa Fan" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Film Making</span>
+                                <h3>طين وفن</h3>
+                                <p>Documentary on pottery-making & human craftsmanship</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- ============ MODELING & ANIMATION ============ -->
+
+                <!-- رحال -->
+                <article class="project-card reveal" data-category="modeling">
+                    <div class="project-image">
+                        <img src="assets/covers/rahhal-cover.jpg" alt="Rahhal" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Modeling & Animation</span>
+                                <h3>Rahhal</h3>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- Echoes Inside -->
+                <article class="project-card reveal" data-category="modeling">
+                    <div class="project-image">
+                        <img src="assets/covers/echoes-inside-cover.jpg" alt="Echoes Inside" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Modeling & Animation</span>
+                                <h3>Echoes Inside</h3>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- 3D Animation -->
+                <article class="project-card reveal" data-category="modeling">
+                    <div class="project-image">
+                        <img src="assets/covers/3d-animation-main.jpg" alt="3D Animation" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Modeling & Animation</span>
+                                <h3>3D Animation</h3>
+                                <p>Stylized project focusing on animation, lighting & storytelling</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- Fantasia -->
+                <article class="project-card reveal" data-category="modeling">
+                    <div class="project-image">
+                        <img src="assets/covers/fantasia-3d-render.jpg" alt="Fantasia" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Modeling & Animation</span>
+                                <h3>Fantasia</h3>
+                                <p>Conceptual 3D scene exploring imaginative environments</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- Australian Culture -->
+                <article class="project-card reveal" data-category="modeling">
+                    <div class="project-image">
+                        <img src="assets/covers/australian-culture-cover.jpg" alt="Australian Culture" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Modeling & Animation</span>
+                                <h3>Australian Culture</h3>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- Andalus -->
+                <article class="project-card reveal" data-category="modeling">
+                    <div class="project-image">
+                        <img src="assets/covers/andalus-3d-render.jpg" alt="Andalus" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Modeling & Animation</span>
+                                <h3>Andalus</h3>
+                                <p>3D environment study focused on materials, lighting & atmosphere</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- ============ MULTIMEDIA ============ -->
+
+                <!-- Hikaya -->
+                <article class="project-card reveal" data-category="multimedia">
+                    <div class="project-image">
+                        <img src="assets/covers/hikaya-cover.jpg" alt="Hikaya" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Multimedia</span>
+                                <h3>Hikaya | حكاية</h3>
+                                <p>Storytelling platform highlighting voices from rural communities</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- Vigor -->
+                <article class="project-card reveal" data-category="multimedia">
+                    <div class="project-image">
+                        <img src="assets/covers/vigor-branding.jpg" alt="Vigor" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Multimedia</span>
+                                <h3>Vigor</h3>
+                                <p>Protein brand identity built around strength, energy & bold visuals</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- Maknoon -->
+                <article class="project-card reveal" data-category="multimedia">
+                    <div class="project-image">
+                        <img src="assets/covers/maknoon-concept.jpg" alt="Maknoon" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Multimedia</span>
+                                <h3>Maknoon</h3>
+                                <p>Heritage hackathon concept exploring cultural heritage through modern design</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- حامل المسك -->
+                <article class="project-card reveal" data-category="multimedia">
+                    <div class="project-image">
+                        <img src="assets/covers/hamel-al-misk-sm.jpg" alt="Hamel Al Misk" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Multimedia</span>
+                                <h3>حامل المسك</h3>
+                                <p>Social media content inspired by cultural & aesthetic elements</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- Axiomcare -->
+                <article class="project-card reveal" data-category="multimedia">
+                    <div class="project-image">
+                        <img src="assets/covers/axiomcare-sm.jpg" alt="Axiomcare" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Multimedia</span>
+                                <h3>Axiomcare</h3>
+                                <p>Clean & engaging social media designs communicating brand identity</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- Senova -->
+                <article class="project-card reveal" data-category="multimedia">
+                    <div class="project-image">
+                        <img src="assets/covers/senova-ui-ux.jpg" alt="Senova" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Multimedia</span>
+                                <h3>Senova</h3>
+                                <p>Mental health app UI/UX with calming, emotionally supportive experience</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- Broasted -->
+                <article class="project-card reveal" data-category="multimedia">
+                    <div class="project-image">
+                        <img src="assets/covers/broasted-sm.jpg" alt="Broasted" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Multimedia</span>
+                                <h3>Broasted</h3>
+                                <p>Playful & bold social media visuals for a food brand</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+                <!-- Wing -->
+                <article class="project-card reveal" data-category="multimedia">
+                    <div class="project-image">
+                        <img src="assets/covers/wing-typography.jpg" alt="Wing Typography" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <span class="project-category">Multimedia</span>
+                                <h3>Wing</h3>
+                                <p>Experimental typography inspired by structure & movement of wings</p>
+                                <span class="project-cta">View on Behance →</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" class="project-link"></a>
+                </article>
+
+            </div>
+            
+            <!-- Load More Button (for future expansion) -->
+            <div class="portfolio-load-more">
+                <button class="btn btn-outline">Load More Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Let's Connect</span>
+                <h2 class="section-title">Start a Conversation</h2>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info reveal">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <a href="mailto:Reem.alabed04@gmail.com">Reem.alabed04@gmail.com</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone / WhatsApp</h4>
+                        <a href="https://wa.me/962799404682" target="_blank">+962 79 940 4682</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fab fa-instagram"></i>
+                        <h4>Instagram</h4>
+                        <a href="https://www.instagram.com/reemalaabed_?igsh=MTNxcHZ3ZDV4aHptbg%3D%3D&utm_source=qr" target="_blank">@Reemalaabed_</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <span>Jordan 🇯🇴</span>
+                    </div>
+                    
+                    <!-- Quick Action Buttons -->
+                    <div class="contact-actions">
+                        <a href="https://wa.me/962799404682?text=Hello%20Reem!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Message on WhatsApp
+                        </a>
+                        <a href="https://www.instagram.com/reemalaabed_?igsh=MTNxcHZ3ZDV4aHptbg%3D%3D&utm_source=qr" target="_blank" class="btn btn-instagram">
+                            <i class="fab fa-instagram"></i> DM on Instagram
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <form class="contact-form reveal delay-1" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    
+                    <p class="form-note">I'll get back to you within 24-48 hours ✨</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo1.png" alt="Reem Alaabed" class="footer-logo">
+                    <p>Designing stories you can feel.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/reemalaabed_?igsh=MTNxcHZ3ZDV4aHptbg%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                    <a href="mailto:Reem.alabed04@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Reem Alaabed. All rights reserved. Crafted with ❤️ in Jordan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Message sent successfully!</span>
     </div>
-</section>
 
-<!-- ✦ MULTIMEDIA -->
-<section>
-    <h2>Multimedia</h2>
-    <div class="grid">
-
-        <a href="#"><img src="senova-ui-ux.jpg"><h4>Senova</h4></a>
-        <a href="#"><img src="vigor-branding.jpg"><h4>Vigor</h4></a>
-        <a href="#"><img src="maknoon-concept.jpg"><h4>Maknoon</h4></a>
-        <a href="#"><img src="wing-typography.jpg"><h4>Wing</h4></a>
-        <a href="#"><img src="axiomcare-sm.jpg"><h4>Axiomcare</h4></a>
-        <a href="#"><img src="broasted-sm.jpg"><h4>Broasted</h4></a>
-        <a href="#"><img src="hamel-al-misk-sm.jpg"><h4>Hamel Al Misk</h4></a>
-
-    </div>
-</section>
-
-<!-- ✦ CONTACT -->
-<section class="contact">
-    <h2>Contact</h2>
-
-    <p>Email: <a href="mailto:Reem.alabed04@gmail.com">Reem.alabed04@gmail.com</a></p>
-
-    <p>Phone: <a href="https://wa.me/962799404682" target="_blank">WhatsApp Me</a></p>
-
-    <p>Instagram:
-        <a href="https://instagram.com/Reemalaabed_" target="_blank">
-            @Reemalaabed_
-        </a>
-    </p>
-
-    <form action="https://formspree.io/f/yourID" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
-    </form>
-
-</section>
-
-<script src="script.js"></script>
+    <!-- Custom CSS & JS -->
+    <script src="js/main.js"></script>
 </body>
 </html>
