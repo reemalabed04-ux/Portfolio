@@ -1290,3 +1290,49 @@ textarea:focus-visible {
 .skip-link:focus {
     top: 0;
 }
+/* CV Download Card */
+.cv-download-card {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: var(--color-white);
+    padding: 2.5rem;
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    transition: transform var(--transition-normal);
+}
+
+.cv-download-card:hover {
+    transform: translateY(-5px);
+}
+
+.cv-download-card i {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    opacity: 0.95;
+}
+
+.cv-download-card h4 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.cv-download-card p {
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.cv-download-card .btn {
+    margin: 0.5rem;
+}
+
+.cv-download-card .btn-secondary {
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.cv-download-card .btn-secondary:hover {
+    background: var(--color-white);
+    color: var(--color-primary);
+}
