@@ -136,13 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ===== CONTACT FORM HANDLING =====
-    const contactForm = document.getElementById('contactForm');
-    const toast = document.getElementById('toast');
-    const toastMessage = document.getElementById('toastMessage');
-    
-    contactForm?.addEventListener('submit', async (e) => {
-        e.preventDefault();
+  
         
         // Get form values
         const formData = {
