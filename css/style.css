@@ -544,13 +544,15 @@ body.hovering .cursor-follower {
     transform: translateY(-3px);
 }
 
-.btn-instagram {
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+/* بعد - ألوان لينكدإن */
+.btn-linkedin {
+    background: #0077B5;
     color: white;
 }
-.btn-instagram:hover {
+.btn-linkedin:hover {
+    background: #005582;
     transform: translateY(-3px);
-    filter: brightness(1.1);
+    box-shadow: var(--shadow-md);
 }
 
 /* ===== SECTIONS ===== */
