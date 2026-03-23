@@ -1338,3 +1338,31 @@ textarea:focus-visible {
     background: var(--color-white);
     color: var(--color-primary);
 }
+/* Hero Logo Image */
+.hero-logo {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 4px 10px rgba(94, 29, 33, 0.2));
+    transition: transform var(--transition-normal), filter var(--transition-normal);
+}
+
+.hero-title:hover .hero-logo {
+    transform: scale(1.02);
+    filter: drop-shadow(0 8px 20px rgba(94, 29, 33, 0.3));
+}
+
+/* Responsive - للموبايل */
+@media (max-width: 768px) {
+    .hero-logo {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-logo {
+        max-width: 220px;
+    }
+}
