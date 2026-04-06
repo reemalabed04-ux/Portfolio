@@ -6,15 +6,10 @@
     <title>Reem Alaabed | Experience Identity Designer</title>
     <meta name="description" content="Designing stories you can feel. Portfolio of Reem Alaabed - Multidisciplinary Designer & Storyteller">
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,10 +19,10 @@
 
     <!-- Preloader -->
     <div class="preloader">
-        <div class="loader-content">
+        <div class="loader-inner">
             <img src="assets/logo1.png" alt="Logo" class="loader-logo">
-            <div class="loader-text">Designing stories...</div>
-            <div class="loader-bar"><div class="loader-progress"></div></div>
+            <p class="loader-text">Designing stories<span class="loader-dots">...</span></p>
+            <div class="loader-line"><div class="loader-fill"></div></div>
         </div>
     </div>
 
@@ -37,95 +32,144 @@
             <a href="#" class="nav-logo">
                 <img src="assets/logo1.png" alt="Reem Alaabed">
             </a>
-            
             <button class="nav-toggle" aria-label="Toggle navigation">
-                <span class="hamburger"></span>
+                <span></span><span></span>
             </button>
-            
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link" data-text="Home">Home</a></li>
-                <li><a href="#about" class="nav-link" data-text="About">About</a></li>
-                <li><a href="#work" class="nav-link" data-text="Work">Work</a></li>
-                <li><a href="#categories" class="nav-link" data-text="Categories">Categories</a></li>
-                <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#categories" class="nav-link">Categories</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-bg"></div>
+        <div class="hero-noise"></div>
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="hero-orb orb-3"></div>
+        <div class="hero-grid-lines"></div>
+
         <div class="hero-content">
-            <div class="hero-badge fade-in-up">Jordan 🇯🇴</div>
-         <!-- بعد - صورة -->
-<h1 class="hero-title fade-in-up delay-1">
-    <img src="assets/logo-full.png" alt="Reem Alaabed" class="hero-logo">
-    <span class="title">Experience Identity Designer</span>
-</h1>
-            <p class="hero-tagline fade-in-up delay-2">Designing stories you can feel.</p>
-            <div class="hero-cta fade-in-up delay-3">
-                <a href="#work" class="btn btn-primary">Explore My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            <div class="hero-badge" data-reveal>
+                <span class="badge-dot"></span>
+                Jordan 🇯🇴
             </div>
-            
-            <!-- Social Links Floating -->
-            <div class="hero-social fade-in-up delay-4">
-                <a href="https://www.instagram.com/reemalaabed_?igsh=MTNxcHZ3ZDV4aHptbg%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram" class="social-link">
-                    <i class="fab fa-instagram"></i>
+
+            <h1 class="hero-title" data-reveal data-reveal-delay="1">
+                <img src="assets/logo-full.png" alt="Reem Alaabed" class="hero-logo">
+                <span class="hero-subtitle">Experience Identity Designer</span>
+            </h1>
+
+            <p class="hero-tagline" data-reveal data-reveal-delay="2">
+                <span class="tagline-word">Designing</span>
+                <span class="tagline-word italic">stories</span>
+                <span class="tagline-word">you can</span>
+                <span class="tagline-word italic">feel.</span>
+            </p>
+
+            <div class="hero-cta" data-reveal data-reveal-delay="3">
+                <a href="#work" class="btn btn-primary">
+                    <span>Explore My Work</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </a>
-                <a href="https://www.behance.net/reemal-aabd" target="_blank" aria-label="Behance" class="social-link">
-                    <i class="fab fa-behance"></i>
+                <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+            </div>
+
+            <div class="hero-social" data-reveal data-reveal-delay="4">
+                <a href="https://www.instagram.com/reemalaabed_?igsh=MTNxcHZ3ZDV4aHptbg%3D%3D&utm_source=qr" target="_blank" class="social-pill">
+                    <i class="fab fa-instagram"></i><span>Instagram</span>
                 </a>
-                <a href="mailto:Reem.alabed04@gmail.com" aria-label="Email" class="social-link">
-                    <i class="fas fa-envelope"></i>
+                <a href="https://www.behance.net/reemal-aabd" target="_blank" class="social-pill">
+                    <i class="fab fa-behance"></i><span>Behance</span>
+                </a>
+                <a href="mailto:Reem.alabed04@gmail.com" class="social-pill">
+                    <i class="fas fa-envelope"></i><span>Email</span>
                 </a>
             </div>
         </div>
-        
-        <!-- Scroll Indicator -->
+
         <a href="#about" class="scroll-indicator">
             <span>Scroll</span>
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
+            <div class="scroll-line"><div class="scroll-dot"></div></div>
         </a>
+
+        <!-- Floating marquee -->
+        <div class="hero-marquee">
+            <div class="marquee-track">
+                <span>Film Making</span><span class="sep">✦</span>
+                <span>3D Modeling</span><span class="sep">✦</span>
+                <span>Brand Identity</span><span class="sep">✦</span>
+                <span>UI/UX Design</span><span class="sep">✦</span>
+                <span>Visual Storytelling</span><span class="sep">✦</span>
+                <span>Animation</span><span class="sep">✦</span>
+                <span>Documentary</span><span class="sep">✦</span>
+                <span>Film Making</span><span class="sep">✦</span>
+                <span>3D Modeling</span><span class="sep">✦</span>
+                <span>Brand Identity</span><span class="sep">✦</span>
+                <span>UI/UX Design</span><span class="sep">✦</span>
+                <span>Visual Storytelling</span><span class="sep">✦</span>
+                <span>Animation</span><span class="sep">✦</span>
+                <span>Documentary</span><span class="sep">✦</span>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about section">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-subtitle">About Me</span>
-                <h2 class="section-title">The Story Behind the Visuals</h2>
-            </div>
-            
-            <div class="about-grid">
-                <div class="about-text reveal">
+            <div class="section-label" data-reveal>About Me</div>
+            <h2 class="section-title" data-reveal data-reveal-delay="1">The Story Behind<br><em>the Visuals</em></h2>
+
+            <div class="about-layout">
+                <div class="about-left" data-reveal data-reveal-delay="1">
                     <p class="about-intro">
                         I'm a designer who believes that every visual has a story behind it.
                         I specialize in immersive concepts that combine design with emotion and narrative.
                         Through my work, I aim to create experiences that feel personal, thoughtful, and memorable.
                     </p>
-                    
-                    <div class="what-i-do">
+
+                    <div class="what-i-do" data-reveal data-reveal-delay="2">
                         <h3>What I Do</h3>
-                        <p>I'm a multidisciplinary designer and storyteller working across design, film, and digital experiences.
-                        I design and create across multiple mediums, combining visuals, storytelling, and experience design.</p>
-                        
+                        <p class="wid-sub">I'm a multidisciplinary designer and storyteller working across design, film, and digital experiences.</p>
                         <ul class="services-list">
-                            <li><i class="fas fa-palette"></i> <strong>Design & Branding:</strong> Visual identities that communicate clearly and feel meaningful.</li>
-                            <li><i class="fas fa-laptop-code"></i> <strong>UI/UX & Digital Experiences:</strong> Intuitive, engaging, emotionally aware interfaces.</li>
-                            <li><i class="fas fa-book-open"></i> <strong>Visual Storytelling:</strong> Concepts focused on narrative, mood, and human connection.</li>
-                            <li><i class="fas fa-film"></i> <strong>Animation & Multimedia:</strong> Bringing ideas to life through motion and sound.</li>
-                            <li><i class="fas fa-video"></i> <strong>Filmmaking & Documentaries:</strong> Highlighting real stories with authenticity.</li>
-                            <li><i class="fas fa-cube"></i> <strong>3D & Worldbuilding:</strong> Stylized environments blending storytelling with visual exploration.</li>
+                            <li>
+                                <div class="service-icon"><i class="fas fa-palette"></i></div>
+                                <div><strong>Design & Branding</strong><span>Visual identities that communicate clearly and feel meaningful.</span></div>
+                            </li>
+                            <li>
+                                <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                                <div><strong>UI/UX & Digital Experiences</strong><span>Intuitive, engaging, emotionally aware interfaces.</span></div>
+                            </li>
+                            <li>
+                                <div class="service-icon"><i class="fas fa-book-open"></i></div>
+                                <div><strong>Visual Storytelling</strong><span>Concepts focused on narrative, mood, and human connection.</span></div>
+                            </li>
+                            <li>
+                                <div class="service-icon"><i class="fas fa-film"></i></div>
+                                <div><strong>Animation & Multimedia</strong><span>Bringing ideas to life through motion and sound.</span></div>
+                            </li>
+                            <li>
+                                <div class="service-icon"><i class="fas fa-video"></i></div>
+                                <div><strong>Filmmaking & Documentaries</strong><span>Highlighting real stories with authenticity.</span></div>
+                            </li>
+                            <li>
+                                <div class="service-icon"><i class="fas fa-cube"></i></div>
+                                <div><strong>3D & Worldbuilding</strong><span>Stylized environments blending storytelling with visual exploration.</span></div>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                
-                <div class="about-visual reveal delay-1">
-                    <div class="tools-card">
-                        <h4>Tools I Use</h4>
+
+                <div class="about-right">
+                    <div class="tools-card" data-reveal data-reveal-delay="2">
+                        <div class="tools-header">
+                            <h4>Tools I Use</h4>
+                            <div class="tools-line"></div>
+                        </div>
                         <div class="tools-grid">
                             <span class="tool">Photoshop</span>
                             <span class="tool">Illustrator</span>
@@ -137,449 +181,384 @@
                             <span class="tool">Audition</span>
                             <span class="tool">Unreal Engine</span>
                             <span class="tool">ZBrush</span>
-                            <span class="tool canon">📷 Canon Cameras</span>
+                            <span class="tool tool-special">📷 Canon Cameras</span>
                         </div>
                     </div>
-                    
-                   
-                   <!-- CV Download -->
-<div class="cv-download-card">
-    <i class="fas fa-file-pdf"></i>
-    <h4>Download My CV</h4>
-    <p>2 pages • PDF Format • Updated 2026</p>
-    <a href="assets/Reem-Alaabed-CV.pdf" target="_blank" download class="btn btn-primary">
-        <i class="fas fa-download"></i> Download CV
-    </a>
-    <a href="assets/Reem-Alaabed-CV.pdf" target="_blank" class="btn btn-secondary">
-        <i class="fas fa-eye"></i> Preview
-    </a>
-</div>
+
+                    <div class="cv-card" data-reveal data-reveal-delay="3">
+                        <div class="cv-card-bg"></div>
+                        <div class="cv-card-content">
+                            <div class="cv-icon">
+                                <i class="fas fa-file-pdf"></i>
+                            </div>
+                            <h4>Download My CV</h4>
+                            <p>2 pages · PDF · Updated 2026</p>
+                            <div class="cv-btns">
+                                <a href="assets/Reem-Alaabed-CV.pdf" download class="btn btn-primary btn-sm">
+                                    <i class="fas fa-download"></i> Download
+                                </a>
+                                <a href="assets/Reem-Alaabed-CV.pdf" target="_blank" class="btn btn-ghost btn-sm">
+                                    <i class="fas fa-eye"></i> Preview
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Categories Navigation -->
+    <!-- Categories -->
     <section id="categories" class="categories section">
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-subtitle">Explore</span>
-                <h2 class="section-title">My Work Categories</h2>
-            </div>
-            
-            <div class="categories-grid">
-                <button class="category-btn active" data-category="all">
+            <div class="section-label" data-reveal>Explore</div>
+            <h2 class="section-title" data-reveal data-reveal-delay="1">My Work <em>Categories</em></h2>
+            <div class="categories-wrap" data-reveal data-reveal-delay="2">
+                <button class="cat-btn active" data-category="all">
                     <i class="fas fa-th-large"></i> All Work
                 </button>
-                <button class="category-btn" data-category="filmmaking">
+                <button class="cat-btn" data-category="filmmaking">
                     <i class="fas fa-video"></i> Film Making
                 </button>
-                <button class="category-btn" data-category="modeling">
+                <button class="cat-btn" data-category="modeling">
                     <i class="fas fa-cube"></i> Modeling & Animation
                 </button>
-                <button class="category-btn" data-category="multimedia">
+                <button class="cat-btn" data-category="multimedia">
                     <i class="fas fa-layer-group"></i> Multimedia
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio -->
     <section id="work" class="portfolio section">
         <div class="container">
             <div class="portfolio-grid">
-                
-                <!-- ============ FILM MAKING ============ -->
-                
-                <!-- بين الشوارع -->
-                <article class="project-card reveal" data-category="filmmaking">
-                    <div class="project-image">
+
+                <!-- FILM MAKING -->
+                <article class="project-card" data-category="filmmaking" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/between-the-streets-cover.jpg" alt="Between the Streets" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Film Making</span>
-                                <h3>Between the Streets| بين الشـــوارع</h3>
-                                <p>A documentary about short talks in Amman </p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Film Making</span>
+                            <h3>Between the Streets<br><span class="arabic">بين الشـــوارع</span></h3>
+                            <p>A documentary about short talks in Amman</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/243239849/_" target="_blank" class="project-link" aria-label="View Between the Streets on Behance"></a>
+                    <a href="https://www.behance.net/gallery/243239849/_" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- لفة لويبدة -->
-                <article class="project-card reveal" data-category="filmmaking">
-                    <div class="project-image">
+                <article class="project-card" data-category="filmmaking" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/weibdeh-walk-cover.jpg" alt="A Walk in Weibdeh" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Film Making</span>
-                                <h3>A Walk in Weibdeh | لفّــة لويبدة</h3>
-                                <p>Observational documentary about Alweibdeh </p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Film Making</span>
+                            <h3>A Walk in Weibdeh<br><span class="arabic">لفّــة لويبدة</span></h3>
+                            <p>Observational documentary about Alweibdeh</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/242573851/_" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/242573851/_" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- فن الملاحظة -->
-                <article class="project-card reveal" data-category="filmmaking">
-                    <div class="project-image">
+                <article class="project-card" data-category="filmmaking" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/observation-art-cover.jpg" alt="The Art of Observation" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Film Making</span>
-                                <h3>The Art of Observation | فن الملاحظة</h3>
-                                <p>Observational documentary about the true life in irbid </p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Film Making</span>
+                            <h3>The Art of Observation<br><span class="arabic">فن الملاحظة</span></h3>
+                            <p>Observational documentary about the true life in Irbid</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/240981813/_" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/240981813/_" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- La Fuente -->
-                <article class="project-card reveal" data-category="filmmaking">
-                    <div class="project-image">
+                <article class="project-card" data-category="filmmaking" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/la-fuente-cover.jpg" alt="La Fuente" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Film Making</span>
-                                <h3>La Fuente</h3>
-                                <p>A cinematic exploration of mood, light, and composition</p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Film Making</span>
+                            <h3>La Fuente</h3>
+                            <p>A cinematic exploration of mood, light, and composition</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/238025895/Cinematography-La-fuente" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/238025895/Cinematography-La-fuente" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- طين وفن -->
-                <article class="project-card reveal" data-category="filmmaking">
-                    <div class="project-image">
+                <article class="project-card" data-category="filmmaking" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/teen-wa-fan-cover.jpg" alt="Teen wa Fan" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Film Making</span>
-                                <h3>طين وفن</h3>
-                                <p>Documentary on pottery-making & human craftsmanship</p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Film Making</span>
+                            <h3>طين وفن</h3>
+                            <p>Documentary on pottery-making & human craftsmanship</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/226574835/Cinematography-" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/226574835/Cinematography-" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- ============ MODELING & ANIMATION ============ -->
-
-                <!-- رحال -->
-                <article class="project-card reveal" data-category="modeling">
-                    <div class="project-image">
+                <!-- MODELING & ANIMATION -->
+                <article class="project-card" data-category="modeling" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/rahhal-cover.jpg" alt="Rahhal" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Modeling & Animation</span>
-                                <h3>Rahhal</h3>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Modeling & Animation</span>
+                            <h3>Rahhal <span class="arabic">رحّال</span></h3>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/246057663/_" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/246057663/_" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- Echoes Inside -->
-                <article class="project-card reveal" data-category="modeling">
-                    <div class="project-image">
+                <article class="project-card" data-category="modeling" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/echoes-inside-cover.jpg" alt="Echoes Inside" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Modeling & Animation</span>
-                                <h3>Echoes Inside</h3>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Modeling & Animation</span>
+                            <h3>Echoes Inside</h3>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/246057513/Echoes-inside" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/246057513/Echoes-inside" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- 3D Animation -->
-                <article class="project-card reveal" data-category="modeling">
-                    <div class="project-image">
+                <article class="project-card" data-category="modeling" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/3d-animation-main.jpg" alt="3D Animation" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Modeling & Animation</span>
-                                <h3>3D Animation</h3>
-                                <p>Stylized project focusing on animation, lighting & storytelling</p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Modeling & Animation</span>
+                            <h3>3D Animation</h3>
+                            <p>Stylized project focusing on animation, lighting & storytelling</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/217564109/3D-animation" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/217564109/3D-animation" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- Fantasia -->
-                <article class="project-card reveal" data-category="modeling">
-                    <div class="project-image">
+                <article class="project-card" data-category="modeling" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/fantasia-3d-render.jpg" alt="Fantasia" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Modeling & Animation</span>
-                                <h3>Fantasia</h3>
-                                <p>Conceptual 3D scene exploring imaginative environments</p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Modeling & Animation</span>
+                            <h3>Fantasia</h3>
+                            <p>Conceptual 3D scene exploring imaginative environments</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/217563567/Fantasia-Texturing-and-lighting" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/217563567/Fantasia-Texturing-and-lighting" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- Australian Culture -->
-                <article class="project-card reveal" data-category="modeling">
-                    <div class="project-image">
+                <article class="project-card" data-category="modeling" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/australian-culture-cover.jpg" alt="Australian Culture" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Modeling & Animation</span>
-                                <h3>Australian Culture</h3>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Modeling & Animation</span>
+                            <h3>Australian Culture</h3>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/217562373/Australian-culture-Texturing-and-lighting" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/217562373/Australian-culture-Texturing-and-lighting" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- Andalus -->
-                <article class="project-card reveal" data-category="modeling">
-                    <div class="project-image">
+                <article class="project-card" data-category="modeling" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/andalus-3d-render.jpg" alt="Andalus" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Modeling & Animation</span>
-                                <h3>Andalus</h3>
-                                <p>3D environment study focused on materials, lighting & atmosphere</p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Modeling & Animation</span>
+                            <h3>Andalus</h3>
+                            <p>3D environment study focused on materials, lighting & atmosphere</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/217563677/Andalus-Texturing-and-lighting" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/217563677/Andalus-Texturing-and-lighting" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- ============ MULTIMEDIA ============ -->
-
-                <!-- Hikaya -->
-                <article class="project-card reveal" data-category="multimedia">
-                    <div class="project-image">
+                <!-- MULTIMEDIA -->
+                <article class="project-card" data-category="multimedia" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/hikaya-cover.jpg" alt="Hikaya" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Multimedia</span>
-                                <h3>Hikaya | حكاية</h3>
-                                <p>Storytelling platform highlighting voices from rural communities</p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Multimedia</span>
+                            <h3>Hikaya <span class="arabic">حكاية</span></h3>
+                            <p>Storytelling platform highlighting voices from rural communities</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/242721015/_" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/242721015/_" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- Vigor -->
-                <article class="project-card reveal" data-category="multimedia">
-                    <div class="project-image">
+                <article class="project-card" data-category="multimedia" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/vigor-branding.jpg" alt="Vigor" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Multimedia</span>
-                                <h3>Vigor</h3>
-                                <p>Protein brand identity built around strength, energy & bold visuals</p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Multimedia</span>
+                            <h3>Vigor</h3>
+                            <p>Protein brand identity built around strength, energy & bold visuals</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/237081133/Vigor-protein-visual-identites" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/237081133/Vigor-protein-visual-identites" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- Maknoon -->
-                <article class="project-card reveal" data-category="multimedia">
-                    <div class="project-image">
+                <article class="project-card" data-category="multimedia" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/maknoon-concept.jpg" alt="Maknoon" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Multimedia</span>
-                                <h3>Maknoon</h3>
-                                <p>Heritage hackathon concept exploring saving heritage through modern design</p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Multimedia</span>
+                            <h3>Maknoon</h3>
+                            <p>Heritage hackathon concept exploring saving heritage through modern design</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/233889995/Maknoon-Heritage-hakathon" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/233889995/Maknoon-Heritage-hakathon" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- حامل المسك -->
-                <article class="project-card reveal" data-category="multimedia">
-                    <div class="project-image">
+                <article class="project-card" data-category="multimedia" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/hamel-al-misk-sm.jpg" alt="Hamel Al Misk" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Multimedia</span>
-                                <h3>حامل المسك</h3>
-                                <p>Social media content inspired by cultural & aesthetic elements</p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Multimedia</span>
+                            <h3>حامل المسك</h3>
+                            <p>Social media content inspired by cultural & aesthetic elements</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/237068707/_" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/237068707/_" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- Axiomcare -->
-                <article class="project-card reveal" data-category="multimedia">
-                    <div class="project-image">
+                <article class="project-card" data-category="multimedia" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/axiomcare-sm.jpg" alt="Axiomcare" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Multimedia</span>
-                                <h3>Axiomcare</h3>
-                                <p>Clean & engaging social media designs communicating brand identity</p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Multimedia</span>
+                            <h3>Axiomcare</h3>
+                            <p>Clean & engaging social media designs communicating brand identity</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/237067941/Axiomcare-social-media-content" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/237067941/Axiomcare-social-media-content" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- Senova -->
-                <article class="project-card reveal" data-category="multimedia">
-                    <div class="project-image">
+                <article class="project-card" data-category="multimedia" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/senova-ui-ux.jpg" alt="Senova" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Multimedia</span>
-                                <h3>Senova</h3>
-                                <p>Mental health app UI/UX with calming, emotionally supportive experience</p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Multimedia</span>
+                            <h3>Senova</h3>
+                            <p>Mental health app UI/UX with calming, emotionally supportive experience</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/217569057/Senova-Mental-health-app-design" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/217569057/Senova-Mental-health-app-design" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- Broasted -->
-                <article class="project-card reveal" data-category="multimedia">
-                    <div class="project-image">
+                <article class="project-card" data-category="multimedia" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/broasted-sm.jpg" alt="Broasted" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Multimedia</span>
-                                <h3>Broasted</h3>
-                                <p>Playful & bold social media visuals for a food brand</p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Multimedia</span>
+                            <h3>Broasted</h3>
+                            <p>Playful & bold social media visuals for a food brand</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/218236101/Social-media-content-Broasted" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/218236101/Social-media-content-Broasted" target="_blank" class="card-link"></a>
                 </article>
 
-                <!-- Wing -->
-                <article class="project-card reveal" data-category="multimedia">
-                    <div class="project-image">
+                <article class="project-card" data-category="multimedia" data-reveal>
+                    <div class="card-img">
                         <img src="assets/covers/wing-typography.jpg" alt="Wing Typography" loading="lazy">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <span class="project-category">Multimedia</span>
-                                <h3>Wing</h3>
-                                <p>Experimental typography inspired by structure & movement of wings</p>
-                                <span class="project-cta">View on Behance →</span>
-                            </div>
+                        <div class="card-overlay">
+                            <span class="card-cat">Multimedia</span>
+                            <h3>Wing</h3>
+                            <p>Experimental typography inspired by structure & movement of wings</p>
+                            <span class="card-cta">View on Behance <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <a href="https://www.behance.net/gallery/217566523/Wing-Typograpghy" target="_blank" class="project-link"></a>
+                    <a href="https://www.behance.net/gallery/217566523/Wing-Typograpghy" target="_blank" class="card-link"></a>
                 </article>
 
-            </div>
-            
-            <!-- Load More Button (for future expansion) -->
-            <div class="portfolio-load-more">
-                <button class="btn btn-outline">Load More Projects</button>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
+        <div class="contact-bg-text">CONNECT</div>
         <div class="container">
-            <div class="section-header reveal">
-                <span class="section-subtitle">Let's Connect</span>
-                <h2 class="section-title">Start a Conversation</h2>
-            </div>
-            
-            <div class="contact-grid">
-                <!-- Contact Info -->
-                <div class="contact-info reveal">
-                    <div class="contact-card">
-                        <i class="fas fa-envelope"></i>
-                        <h4>Email</h4>
-                        <a href="mailto:Reem.alabed04@gmail.com">Reem.alabed04@gmail.com</a>
+            <div class="section-label" data-reveal>Let's Connect</div>
+            <h2 class="section-title" data-reveal data-reveal-delay="1">Start a<br><em>Conversation</em></h2>
+
+            <div class="contact-layout">
+                <div class="contact-left" data-reveal data-reveal-delay="1">
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:Reem.alabed04@gmail.com">Reem.alabed04@gmail.com</a>
+                        </div>
                     </div>
-                    
-                    <div class="contact-card">
-                        <i class="fas fa-phone"></i>
-                        <h4>Phone / WhatsApp</h4>
-                        <a href="https://wa.me/962799404682" target="_blank">+962 79 940 4682</a>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Phone / WhatsApp</h4>
+                            <a href="https://wa.me/962799404682" target="_blank">+962 79 940 4682</a>
+                        </div>
                     </div>
-                    
-                    <div class="contact-card">
-                        <i class="fab fa-instagram"></i>
-                        <h4>Instagram</h4>
-                        <a href="https://www.instagram.com/reemalaabed_?igsh=MTNxcHZ3ZDV4aHptbg%3D%3D&utm_source=qr" target="_blank">@Reemalaabed_</a>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fab fa-instagram"></i></div>
+                        <div>
+                            <h4>Instagram</h4>
+                            <a href="https://www.instagram.com/reemalaabed_?igsh=MTNxcHZ3ZDV4aHptbg%3D%3D&utm_source=qr" target="_blank">@Reemalaabed_</a>
+                        </div>
                     </div>
-                    
-                    <div class="contact-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h4>Location</h4>
-                        <span>Jordan 🇯🇴</span>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <span>Jordan 🇯🇴</span>
+                        </div>
                     </div>
-                    
-                    <!-- Quick Action Buttons -->
                     <div class="contact-actions">
                         <a href="https://wa.me/962799404682?text=Hello%20Reem!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" class="btn btn-whatsapp">
                             <i class="fab fa-whatsapp"></i> Message on WhatsApp
                         </a>
                         <a href="https://www.linkedin.com/in/reem-saeed-17106b28b/" target="_blank" class="btn btn-linkedin">
-                            <i class="fab fa-linkedin"></i> DM on Linkedin
+                            <i class="fab fa-linkedin"></i> DM on LinkedIn
                         </a>
                     </div>
                 </div>
-                
-                <!-- Contact Form -->
-               <form class="contact-form reveal delay-1" id="contactForm" 
-      action="https://formspree.io/f/mjgaqrgn" 
-      method="POST">
-                    <div class="form-group">
-                        <label for="name">Your Name *</label>
-                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <form class="contact-form" data-reveal data-reveal-delay="2"
+                      id="contactForm"
+                      action="https://formspree.io/f/mjgaqrgn"
+                      method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Your Email *</label>
-                        <input type="email" id="email" name="email" required placeholder="Enter your email">
-                    </div>
-                    
                     <div class="form-group">
                         <label for="subject">Subject *</label>
                         <input type="text" id="subject" name="subject" required placeholder="What's this about?">
                     </div>
-                    
                     <div class="form-group">
                         <label for="message">Message *</label>
                         <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
                     </div>
-                    
-                    <button type="submit" class="btn btn-primary btn-block">
+                    <button type="submit" class="btn btn-primary btn-full">
                         <i class="fas fa-paper-plane"></i> Send Message
                     </button>
-                    
-                    <p class="form-note">I'll get back to you within 24-48 hours ✨</p>
+                    <p class="form-note">I'll get back to you within 24–48 hours ✨</p>
                 </form>
             </div>
         </div>
@@ -587,42 +566,36 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="assets/logo1.png" alt="Reem Alaabed" class="footer-logo">
-                    <p>Designing stories you can feel.</p>
-                </div>
-                
+        <div class="footer-inner">
+            <div class="footer-top">
+                <img src="assets/logo1.png" alt="Reem Alaabed" class="footer-logo">
+                <p class="footer-tagline">Designing stories you can feel.</p>
+            </div>
+            <div class="footer-mid">
                 <div class="footer-links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#work">Work</a>
                     <a href="#contact">Contact</a>
                 </div>
-                
                 <div class="footer-social">
-                   <a href="https://www.linkedin.com/in/reem-saeed-17106b28b/" target="_blank" aria-label="LinkedIn">
-    <i class="fab fa-linkedin"></i>
-</a>
-                    <a href="https://www.behance.net/reemal-aabd" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
-                    <a href="mailto:Reem.alabed04@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/reem-saeed-17106b28b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/reemal-aabd" target="_blank"><i class="fab fa-behance"></i></a>
+                    <a href="mailto:Reem.alabed04@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>&copy; <span id="year"></span> Reem Alaabed. All rights reserved. Crafted with ❤️ in Jordan.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Toast Notification -->
+    <!-- Toast -->
     <div class="toast" id="toast">
         <i class="fas fa-check-circle"></i>
         <span id="toastMessage">Message sent successfully!</span>
     </div>
 
-    <!-- Custom CSS & JS -->
     <script src="js/main.js"></script>
 </body>
 </html>
