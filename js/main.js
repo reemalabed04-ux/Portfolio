@@ -232,5 +232,70 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ===== FRAMES LIGHTBOX =====
+    const frames = document.querySelectorAll('.frame-item img');
+
+    if (frames.length) {
+        // Build lightbox DOM
+        const lightbox = document.createElement('div');
+        lightbox.className = 'lightbox';
+        lightbox.innerHTML = `
+            <button class="lightbox-close" aria-label="Close"><i class="fas fa-times"></i></button>
+            <button class="lightbox-nav lightbox-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <img class="lightbox-img" src="" alt="">
+            <button class="lightbox-nav lightbox-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+            <span class="lightbox-counter"></span>
+        `;
+        document.body.appendChild(lightbox);
+
+        const lbImg     = lightbox.querySelector('.lightbox-img');
+        const lbCounter = lightbox.querySelector('.lightbox-counter');
+        let current     = 0;
+
+        const openLightbox = (i) => {
+            current = i;
+            lbImg.src = frames[current].src;
+            lbImg.alt = frames[current].alt;
+            lbCounter.textContent = `${current + 1} / ${frames.length}`;
+            lightbox.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        };
+
+        const closeLightbox = () => {
+            lightbox.classList.remove('open');
+            document.body.style.overflow = '';
+        };
+
+        const showNext = () => openLightbox((current + 1) % frames.length);
+        const showPrev = () => openLightbox((current - 1 + frames.length) % frames.length);
+
+        frames.forEach((img, i) => {
+            img.parentElement.addEventListener('click', () => openLightbox(i));
+        });
+
+        lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+        lightbox.querySelector('.lightbox-next').addEventListener('click', showNext);
+        lightbox.querySelector('.lightbox-prev').addEventListener('click', showPrev);
+
+        // Close on backdrop click
+        lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+
+        // Keyboard nav
+        document.addEventListener('keydown', e => {
+            if (!lightbox.classList.contains('open')) return;
+            if (e.key === 'Escape')     closeLightbox();
+            if (e.key === 'ArrowRight') showNext();
+            if (e.key === 'ArrowLeft')  showPrev();
+        });
+
+        // Touch swipe
+        let touchStartX = 0;
+        lightbox.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+        lightbox.addEventListener('touchend',   e => {
+            const diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) diff > 0 ? showNext() : showPrev();
+        });
+    }
+
     console.log('✦ Reem Alaabed Portfolio ✦ Loaded');
 });
